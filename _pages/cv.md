@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <Your Name> - Curriculum Vitae
+title: Taehee Kim - Curriculum Vitae
 permalink: /cv/
 ---
 ## Curriculum Vitae
@@ -8,7 +8,7 @@ permalink: /cv/
 [Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890
+**Email:** [tk685@cornell.edu](mailto:tk685@cornell.edu) | | | **Phone:** +607 697 5292
 
 ---
 
