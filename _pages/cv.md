@@ -20,7 +20,7 @@ Motivated engineering student with a solid foundation in mechanical systems, mec
 #### Education
 - **Cornell University**  
   *Bachelor of Mechanical Engineering*  
-  GPA: 3.84 /4.0 | Graduation: August, 2028
+  GPA: 3.84 /4.0 | Graduation: December, 2027
 
 - **North London Collegiate School**  
   *High School Diploma*  
