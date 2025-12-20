@@ -3,8 +3,7 @@ layout: project
 title: Thermodynamic Analysis of the IFHX (Heat Exchanger Device) 
 description: For ENGRD 2210 homework
 technologies: [NA]
-image: 
-- /assets/images/activethermalcontrolsystemarchitecture.jpg
+image: /assets/images/activethermalcontrolsystemarchitecture.jpg
 ---
 **<u>1. Background Information</u>**
 
