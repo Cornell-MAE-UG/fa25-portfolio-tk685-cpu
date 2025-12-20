@@ -15,7 +15,7 @@ Because the ISS is basically a giant collection of powered systems (life support
 
 **1.1. How does the ISS control heat?**
 
-![Design of my choice]({{ "/assets/images/activethermalcontrolsystemarchitecture.jpg" | relative_url }}){: .inline-image-r style="width: 600px"}
+![Design of my choice]({{ "/assets/images/activethermalcontrolsystemarchitecture.jpg" | relative_url }}){: .inline-image-r style="width: 800px"}
 
 The ISS uses both passive and active thermal control. Passive thermal control is basically the set of approaches that help manage temperatures without powered fluid systems, such as insulation/MLI, surface coatings, and heat pipes (and other passive hardware depending on context).  
 
