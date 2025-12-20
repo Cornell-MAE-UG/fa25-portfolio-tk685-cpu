@@ -50,26 +50,18 @@ This approach is slightly simplified compared to reality. In the full ISS archit
 Control volume: the IFHX core (both fluid streams inside the exchanger). We treat the IFHX as a steady-flow control volume, with one water stream and one ammonia stream exchanging heat through the walls (no mixing).
 
 Two inlets, two outlets:
-$$
-\begin{aligned}
-\text{Water (MTL):} \quad & \dot{m}_w, T_{w,\text{in}}, T_{w,\text{out}} \\
-\text{Ammonia:} \quad & \dot{m}_a, T_{a,\text{in}}, T_{a,\text{out}}
-\end{aligned}
-$$
+$$\text{Water (MTL):} \quad \dot{m}_w, T_{w,in}, T_{w,out}$$
+$$\text{Ammonia:} \quad \dot{m}_a, T_{a,in}, T_{a,out}$$
 
 Heat transfer sign convention:
-$\dot{Q}_{HX} > 0 \Rightarrow \text{heat flows from water to ammonia.}$
+$$\dot{Q}_{HX} > 0 \Rightarrow \text{heat flows from water to ammonia.}$$
 
 **2.2. What I call “inlet” vs “outlet”**
 
 For the water loop, the IFHX is where the internal coolant gets cooled before going back to equipment:
 
-$$
-\begin{aligned}
-T_{w,\text{in}} &: \text{warmer “return” water entering the IFHX from equipment} \\
-T_{w,\text{out}} &: \text{cooled “supply” water leaving the IFHX back to equipment}
-\end{aligned}
-$$
+$$T_{w,in} : \text{warmer "return" water entering the IFHX}$$
+$$T_{w,out} : \text{cooled "supply" water leaving the IFHX}$$
 
 For the ammonia loop, ammonia enters colder and leaves warmer:
 
