@@ -15,7 +15,7 @@ Because the ISS is basically a giant collection of powered systems (life support
 
 **1.1. How does the ISS control heat?**
 
-![Design of my choice]({{ "/assets/images/activethermalcontrolsystemarchitecture.jpg" | relative_url }}){: .inline-image-r style="width: 400px"}
+![Design of my choice]({{ "/assets/images/activethermalcontrolsystemarchitecture.jpg" | relative_url }}){: .inline-image-r style="width: 600px"}
 
 The ISS uses both passive and active thermal control. Passive thermal control is basically the set of approaches that help manage temperatures without powered fluid systems, such as insulation/MLI, surface coatings, and heat pipes (and other passive hardware depending on context).  
 
@@ -68,17 +68,17 @@ For the water loop, the IFHX is where the internal coolant gets cooled before go
 
 $$
 \begin{aligned}
-T_{w,in} &: \text{warmer “return” water entering the IFHX from equipment} \\
-T_{w,out} &: \text{cooled “supply” water leaving the IFHX back to equipment}
+T_{w,in} : \text{warmer “return” water entering the IFHX from equipment} \\
+T_{w,out} : \text{cooled “supply” water leaving the IFHX back to equipment}
 \end{aligned}
 $$
 
-For the **ammonia loop**, ammonia enters colder and leaves warmer:
+For the ammonia loop, ammonia enters colder and leaves warmer:
 
 $$
 \begin{aligned}
-T_{a,in} &: \text{colder ammonia entering the IFHX} \\
-T_{a,out} &: \text{warmer ammonia leaving the IFHX}
+T_{a,in} : \text{colder ammonia entering the IFHX} \\
+T_{a,out} : \text{warmer ammonia leaving the IFHX}
 \end{aligned}
 $$
 
@@ -86,8 +86,8 @@ So we expect:
 
 $$
 \begin{aligned}
-T_{w,in} &> T_{w,out} \\
-T_{a,out} &> T_{a,in}
+T_{w,in} > T_{w,out} \\
+T_{a,out} > T_{a,in}
 \end{aligned}
 $$
 
@@ -100,7 +100,7 @@ I’m using standard heat exchanger / steady-flow device assumptions:
 4. Externally well insulated heat exchanger: negligible heat leak to surroundings
 5. Single-phase, constant
 
-**<mark>3. Thermodynamic Analysis <mark>**
+**<u>3. Thermodynamic Analysis</u>**
 
 **3.0. Mass Balance**
 
