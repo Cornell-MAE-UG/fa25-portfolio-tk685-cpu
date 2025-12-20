@@ -52,15 +52,13 @@ Control volume: the IFHX core (both fluid streams inside the exchanger). We trea
 Two inlets, two outlets:
 $$
 \begin{aligned}
-\text{Water (MTL):}\quad & \dot{m}_w,\; T_{w,\text{in}},\; T_{w,\text{out}} \\
-\text{Ammonia:}\quad & \dot{m}_a,\; T_{a,\text{in}},\; T_{a,\text{out}}
+\text{Water (MTL):} \quad & \dot{m}_w, T_{w,\text{in}}, T_{w,\text{out}} \\
+\text{Ammonia:} \quad & \dot{m}_a, T_{a,\text{in}}, T_{a,\text{out}}
 \end{aligned}
 $$
 
 Heat transfer sign convention:
-$$
-\dot{Q}_{HX} > 0 \;\;\Rightarrow\;\; \text{heat flows from water to ammonia.}
-$$
+$\dot{Q}_{HX} > 0 \Rightarrow \text{heat flows from water to ammonia.}$
 
 **2.2. What I call “inlet” vs “outlet”**
 
@@ -68,8 +66,8 @@ For the water loop, the IFHX is where the internal coolant gets cooled before go
 
 $$
 \begin{aligned}
-T_{w,in} : \text{warmer “return” water entering the IFHX from equipment} \\
-T_{w,out} : \text{cooled “supply” water leaving the IFHX back to equipment}
+T_{w,\text{in}} &: \text{warmer “return” water entering the IFHX from equipment} \\
+T_{w,\text{out}} &: \text{cooled “supply” water leaving the IFHX back to equipment}
 \end{aligned}
 $$
 
@@ -77,8 +75,8 @@ For the ammonia loop, ammonia enters colder and leaves warmer:
 
 $$
 \begin{aligned}
-T_{a,in} : \text{colder ammonia entering the IFHX} \\
-T_{a,out} : \text{warmer ammonia leaving the IFHX}
+T_{a,\text{in}} &: \text{colder ammonia entering the IFHX} \\
+T_{a,\text{out}} &: \text{warmer ammonia leaving the IFHX}
 \end{aligned}
 $$
 
@@ -194,7 +192,7 @@ $$
 }
 $$
 
-**<mark>4. Plug in numbers (example MTL IFHX operating point) <mark>**
+**<u>4. Plug in numbers (example MTL IFHX operating point)</u>**
 
 **4.1 Given / chosen data**
 
@@ -227,6 +225,7 @@ $$
 \end{aligned}
 $$
 
+
 **4.2 Solve for the water inlet temperature $T_{w,in}$**
 
 Start from:
@@ -258,6 +257,7 @@ T_{w,in}
 &= 24.6^\circ\text{C}
 \end{aligned}
 $$
+
 
 **4.3 Solve for the ammonia outlet temperature $T_{a,out}$**
 
@@ -293,6 +293,7 @@ T_{a,out}
 &= 5.3^\circ\text{C}
 \end{aligned}
 $$
+
 
 **4.4 Efficiency**
 
