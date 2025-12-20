@@ -5,12 +5,11 @@ description: For ENGRD 2210 homework
 technologies: [NA]
 image: 
 - /assets/images/activethermalcontrolsystemarchitecture.jpg
-- /assets/images/interfaceheatexchanger.jpg
-- 
 ---
 **<u>1. Background Information</u>**
 
 **1.0. What is the ISS, and why do we need thermal control?**
+
 The International Space Station (ISS) is a permanently crewed orbital laboratory in low Earth orbit, typically around 370–460 km above Earth. It’s used for research in microgravity, testing new space technologies, Earth observation, and learning how humans and systems perform during long-duration missions. 
 
 Because the ISS is basically a giant collection of powered systems (life support, computers, experiments, communications, etc.), it constantly produces waste heat. NASA describes that most of the station’s systems generate waste heat, and that this heat has to be moved away to maintain thermal control and keep equipment within acceptable temperature limits. If that heat is not managed, components can overheat or go out of their certified operating range, which can affect performance and safety. 
@@ -35,7 +34,7 @@ NASA’s case study explains the main concern clearly: if water in the IFHX free
 
 Because the IFHX is literally the interface between internal heat pickup and external heat rejection, it ends up being a critical point where thermal performance and safety meet. So, in this portfolio, the analysis will focus specifically on the Interface Heat Exchanger (IFHX) as the device of interest: the heat exchanger hardware that transfers waste heat from the ISS internal water-cooling loops to the external ammonia loops before that heat is rejected by the external radiators. 
 
-**<mark>2. Analysis Setup<mark>**
+**<u>2. Analysis Setup</u>**
 
 **2.0. Setup**
 
@@ -54,17 +53,18 @@ Control volume: the IFHX core (both fluid streams inside the exchanger). We trea
 Two inlets, two outlets:
 $$
 \begin{aligned}
-\text{Water (MTL):}\quad & \dot{m}_w,\; T_{w,in},\; T_{w,out} \\
-\text{Ammonia:}\quad & \dot{m}_a,\; T_{a,in},\; T_{a,out}
+\text{Water (MTL):}\quad & \dot{m}_w,\; T_{w,\text{in}},\; T_{w,\text{out}} \\
+\text{Ammonia:}\quad & \dot{m}_a,\; T_{a,\text{in}},\; T_{a,\text{out}}
 \end{aligned}
 $$
 
 Heat transfer sign convention:
 $$
-\dot{Q}_{HX} > 0 \;\; \Rightarrow \;\; \text{heat flows from water to ammonia.}
+\dot{Q}_{HX} > 0 \;\;\Rightarrow\;\; \text{heat flows from water to ammonia.}
 $$
 
 **2.2. What I call “inlet” vs “outlet”**
+
 For the water loop, the IFHX is where the internal coolant gets cooled before going back to equipment:
 
 $$
