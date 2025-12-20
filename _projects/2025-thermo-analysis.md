@@ -9,7 +9,7 @@ image: /assets/images/activethermalcontrolsystemarchitecture.jpg
 
 **1.0. What is the ISS, and why do we need thermal control?**
 
-The International Space Station (ISS) is a permanently crewed orbital laboratory in low Earth orbit, typically around 370–460 km above Earth. It’s used for research in microgravity, testing new space technologies, Earth observation, and learning how humans and systems perform during long-duration missions. 
+The International Space Station (ISS) is a permanently crewed orbital laboratory in low Earth orbit, typically around 400 km above Earth. It’s used for research in microgravity, testing new space technologies, Earth observation, and learning how humans and systems perform during long-duration missions. 
 
 Because the ISS is basically a giant collection of powered systems (life support, computers, experiments, communications, etc.), it constantly produces waste heat. NASA describes that most of the station’s systems generate waste heat, and that this heat has to be moved away to maintain thermal control and keep equipment within acceptable temperature limits. If that heat is not managed, components can overheat or go out of their certified operating range, which can affect performance and safety. 
 
@@ -27,11 +27,7 @@ As shown in Figure 1, the ISS ATCS architecture includes the Internal Active The
 
 **1.2. Interface Heat Exchanger (IFHX) and why it matters**
 
-A good example of why the IFHX is important happened during ISS Expedition 38 in December 2013. NASA documentation describes a situation where an issue involving a flow control valve in a pump module and subsequent thermal-control configuration choices led to the water temperature dropping close to freezing in the Columbus module’s moderate temperature loop heat exchanger path.  
-
-NASA’s case study explains the main concern clearly: if water in the IFHX freezes, the expansion could damage or rupture the barrier between the internal water loop and the external ammonia loop. A rupture could allow ammonia to enter the crewed interior, which NASA describes as potentially leading to loss of crew/loss of vehicles in the worst case. 
-
-Because the IFHX is literally the interface between internal heat pickup and external heat rejection, it ends up being a critical point where thermal performance and safety meet. So, in this portfolio, the analysis will focus specifically on the Interface Heat Exchanger (IFHX) as the device of interest: the heat exchanger hardware that transfers waste heat from the ISS internal water-cooling loops to the external ammonia loops before that heat is rejected by the external radiators. 
+I chose to focus on the Interface Heat Exchanger (IFHX) because it is the point where the ISS thermal system transfers waste heat from the internal water loop to the external ammonia loop. In other words, it sits at the handoff between heat pickup inside the station and heat rejection to space through the radiators. That makes it a high impact component for performance, since its heat transfer effectiveness directly affects internal temperature control. It is also a high consequence component for safety, because it acts as the barrier between a crewed internal system and an external ammonia loop, so freezing events or damage to the interface can create serious operational risk. Because it sits at the intersection of performance and safety, the IFHX is a natural device to analyze.
 
 **<u>2. Analysis Setup</u>**
 
@@ -95,6 +91,9 @@ I’m using standard heat exchanger / steady-flow device assumptions:
 3. Negligible kinetic and potential energy changes
 4. Externally well insulated heat exchanger: negligible heat leak to surroundings
 5. Single-phase, constant
+
+These assumptions were made because the IFHX can be modeled accurately with the standard steady-flow heat exchanger simplifications while keeping the analysis tractable and focused on the dominant energy transfer mechanisms. We assume steady state/steady flow since operating conditions are effectively constant over the time scale of interest, so transient energy storage in the control volume is negligible. We take shaft work to be zero, $$\dot{W}_s = 0$$, because the exchanger core has no rotating shaft or device doing mechanical work on the fluids. We neglect kinetic and potential energy changes, $$\Delta KE \approx 0$$ and $$\Delta PE \approx 0$$, because the inlet/outlet elevation difference is small and typical flow speeds inside the exchanger do not make these terms large relative to the enthalpy change. We assume the exchanger is externally well insulated so any heat leak to the surroundings is small compared to the heat exchanged internally between water and ammonia through the wall. Finally, we assume single-phase flow with approximately constant properties (e.g., constant $$c_p$$) because the intended operation keeps each stream in one phase and the temperature range is limited enough that treating properties as constant provides a good first-order approximation.
+
 
 **<u>3. Thermodynamic Analysis</u>**
 
