@@ -50,6 +50,7 @@ This approach is slightly simplified compared to reality. In the full ISS archit
 Control volume: the IFHX core (both fluid streams inside the exchanger). We treat the IFHX as a steady-flow control volume, with one water stream and one ammonia stream exchanging heat through the walls (no mixing).
 
 Two inlets, two outlets:
+
 $$
 \begin{aligned}
 \text{Water (MTL):} \quad & \dot{m}_w, T_{w,in}, T_{w,out} \\
@@ -58,6 +59,7 @@ $$
 $$
 
 Heat transfer sign convention:
+
 $$\dot{Q}_{HX} > 0 \Rightarrow \text{heat flows from water to ammonia.}$$
 
 **2.2. What I call “inlet” vs “outlet”**
