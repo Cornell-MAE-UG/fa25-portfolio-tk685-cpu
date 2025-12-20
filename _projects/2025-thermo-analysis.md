@@ -27,7 +27,8 @@ As shown in Figure 1, the ISS ATCS architecture includes the Internal Active The
 
 **1.2. Interface Heat Exchanger (IFHX) and why it matters**
 
-I chose to focus on the Interface Heat Exchanger (IFHX) because it is the point where the ISS thermal system transfers waste heat from the internal water loop to the external ammonia loop. In other words, it sits at the handoff between heat pickup inside the station and heat rejection to space through the radiators. That makes it a high impact component for performance, since its heat transfer effectiveness directly affects internal temperature control. It is also a high consequence component for safety, because it acts as the barrier between a crewed internal system and an external ammonia loop, so freezing events or damage to the interface can create serious operational risk. Because it sits at the intersection of performance and safety, the IFHX is a natural device to analyze.
+I chose to focus on the Interface Heat Exchanger (IFHX) because it is the point where the ISS thermal system transfers waste heat from the internal water loop to the external ammonia loop. This matters in a very real way: during ISS Expedition 38, NASA documented a situation where water temperatures in the IFHX heat exchanger path dropped close to freezing due to a flow-control/thermal-control issue. That example makes the IFHX more than just a “component in the loop,” since freezing or damage at the interface can threaten both thermal performance and safety by compromising the barrier between a crewed internal system and an external ammonia system. Because it sits at the intersection of performance and risk, the IFHX is a natural device to analyze.
+
 
 **<u>2. Analysis Setup</u>**
 
